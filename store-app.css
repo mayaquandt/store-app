@@ -63,7 +63,7 @@ hr {
 header{
     padding: 40px -5px -5px 10px;
     margin: 0 0 30px;
-    background-color: #95C67B;
+    background-color: rgb(58, 126, 21);
     width: 100%;
     position: absolute;
     top: 0;
@@ -85,16 +85,8 @@ header h2{
 
 /*Nav Bars*/
 nav{
-    padding: 20px 20px 10px;
-    margin: 20px 0;
-}
-#title {
-    float: left;
-    font-size: 50px;
-    color: white;
-    font-family: cursive;
-    padding: 18px 0 0 20px;
-    margin-left: 30px;
+    padding: 10px 10px 10px;
+    margin: 10px 0;
 }
 nav ul{
     padding: 0;
@@ -112,7 +104,16 @@ nav li a, nav li a:visited{
 #utilityMenu{
     float: left;
     position: relative;
-    background-color: #95C67B;
+    background-color: rgb(58, 126, 21);
+}
+#search {
+    padding-top: -10px;
+}
+.title {
+    width: 500px;
+    margin-top: 125px;
+    margin-bottom: -30px;
+    padding-left: 30px;
 }
 
 /*Sidebar Section*/
@@ -126,6 +127,13 @@ nav li a, nav li a:visited{
     margin: 115px 0 40px 10px;
     padding: 10px 8px 36px 10px;
 }
+.avatar {
+    width: 250px;
+    border-radius: 100%;
+    float: right;
+    padding-bottom: 20px;
+}
+
 .contentWrapper{
     float: right;
     position: relative;
@@ -134,12 +142,13 @@ nav li a, nav li a:visited{
 #sidebar2 {
     position: absolute;
     top: 550px;
-    right: -40px;
+    right: -14px;
     background-color: white;
-    margin: 115px 0 40px 10px;
-    padding: 10px 8px 36px 10px;
-    display: block;
-    width: 300px;
+    margin: 115px 40px 40px 10px;
+    padding: 10px 130px 36px 10px;
+    display: inline-block;
+    width: 140px;
+    font-size: 20px;
 }
 
 /*Main Section*/
@@ -147,7 +156,7 @@ nav li a, nav li a:visited{
     background-color: white;
     margin: 0 0 32px;
     margin-top: 40px;
-    padding: 24px 0 32px 24px;
+    padding: 10px 0 32px 24px;
     display: inline-block;
     border-radius: 32px;
     border: 0px;
@@ -169,6 +178,14 @@ nav li a, nav li a:visited{
 }
 
 /*Footer*/
+.container {
+    bottom: 0;
+    position: relative;
+    height: 25px;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    display: block;
+}
+
 footer {
     background-color: #40362f;
     height: 25px;
@@ -177,13 +194,16 @@ footer {
     width: 100%;
     text-align: center;
     padding: 30px 36px;
+    position: fixed;
+    bottom: 0;
 }
 #menuFooter {
     display: inline-block;
     list-style: none;
     margin: 0 0 0 5px;
     padding: 0;
-    position: center;
+    position: center absolute;
+    bottom: 0;
 }
 footer ul li {
     display: inline-block;
